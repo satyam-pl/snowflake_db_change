@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
-  account  = "oc31534"
+  account  = "oc31534.ap-south-1"
   username = "pspundir"
   password = "Htek@#123"
   role     = "ACCOUNTADMIN"
