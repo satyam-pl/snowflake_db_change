@@ -15,9 +15,13 @@ terraform {
   }
 }
 
-provider "snowflake" {
-  region   = "ap-south-1.aws"  # Replace with your Snowflake region
+  provider "snowflake" {
+  account  = var.SNOWFLAKE_ACCOUNT
+  username = var.SNOWFLAKE_USER
+  password = var.SNOWFLAKE_PASSWORD
+  region   = var.SNOWFLAKE_REGION  # Use the variable directly
 }
+
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
