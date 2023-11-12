@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "your-organization-name"
+    organization = "satyam-patel-trident"
 
     workspaces {
       name = "your-workspace-name"
