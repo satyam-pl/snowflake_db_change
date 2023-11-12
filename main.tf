@@ -16,8 +16,12 @@ terraform {
 }
 
 provider "snowflake" {
+  account  = "oc31534.ap-south-1"
+  username = "pspundir"
+  password = "Htek@#123"
+  role     = "ACCOUNTADMIN"
+  region   = "ap-south-1"
 }
-
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
