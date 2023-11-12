@@ -7,16 +7,20 @@ terraform {
   }
 
   backend "remote" {
-    organization = "satyam-patel-trident"
+    organization = "your-organization-name"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "your-workspace-name"
     }
   }
 }
 
 provider "snowflake" {
-  region = "ap-south-1"
+  account  = "oc31534"
+  username = "pspundir"
+  password = "Htek@#123"
+  role     = "ACCOUNTADMIN"
+  region   = "ap-south-1"
 }
 
 resource "snowflake_database" "demo_db" {
