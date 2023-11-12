@@ -15,7 +15,12 @@ terraform {
   }
 }
 
+
 provider "snowflake" {
+  account  = env("SNOWFLAKE_ACCOUNT")
+  username = env("SNOWFLAKE_USER")
+  password = env("SNOWFLAKE_PASSWORD")
+  region   = env("SNOWFLAKE_REGION")
 }
 
 resource "snowflake_database" "demo_db" {
