@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "satyam-patel-trident"
+    organization = "my-organization-name"
 
     workspaces {
       name = "gh-actions-demo"
@@ -16,9 +16,9 @@ terraform {
 }
 
 provider "snowflake" {
-  }
+}
 
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
-  comment = "Database for Snowflake Terraform demo by satyam patel"
+  comment = "Database for Snowflake Terraform demo"
 }
