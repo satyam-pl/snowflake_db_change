@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
-  region = "ap-south-1"  # Replace with the correct Snowflake region based on your setup
+  region = "ap-south-1"
 }
 
 resource "snowflake_database" "demo_db" {
