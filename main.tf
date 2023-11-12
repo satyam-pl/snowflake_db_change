@@ -17,10 +17,10 @@ terraform {
 
 
 provider "snowflake" {
-  account  = SNOWFLAKE_ACCOUNT
-  username = SNOWFLAKE_USER
-  password = SNOWFLAKE_PASSWORD
-  region   = SNOWFLAKE_REGION
+  account  = var.SNOWFLAKE_ACCOUNT
+  username = var.SNOWFLAKE_USER
+  password = var.SNOWFLAKE_PASSWORD
+  region   = var.SNOWFLAKE_REGION
 }
 
 resource "snowflake_database" "demo_db" {
