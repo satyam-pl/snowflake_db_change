@@ -10,7 +10,7 @@ terraform {
     organization = "satyam-patel-trident"
 
     workspaces {
-      name = "your-workspace-name"
+      name = "gh-actions-demo"
     }
   }
 }
