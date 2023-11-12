@@ -17,9 +17,6 @@ terraform {
 
 
 provider "snowflake" {
-  account  = var.SNOWFLAKE_ACCOUNT
-  username = var.SNOWFLAKE_USER
-  password = var.SNOWFLAKE_PASSWORD
   region   = var.SNOWFLAKE_REGION
 }
 
